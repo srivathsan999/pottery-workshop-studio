@@ -1,0 +1,16 @@
+{
+  "name": "pottery-workshop-studio",
+  "version": "1.0.0",
+  "description": "Professional Pottery Workshop Studio HTML Template",
+  "scripts": {
+    "build-css": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/output.css --watch",
+    "build-css-prod": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/output.css --minify"
+  },
+  "keywords": ["pottery", "workshop", "template", "html"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
+
