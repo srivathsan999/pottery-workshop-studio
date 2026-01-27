@@ -28,6 +28,9 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-accent-terracotta" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
+                    </svg>
                     <span class="text-2xl font-heading font-semibold text-primary">Earth & Clay</span>
                 </a>
 
@@ -60,6 +63,7 @@
                     <a href="blog.html" class="text-primary hover:text-accent-terracotta transition-colors">Blog</a>
                     <a href="contact.html"
                         class="text-primary hover:text-accent-terracotta transition-colors">Contact</a>
+                    <a href="dashboard.html" class="text-primary hover:text-accent-terracotta transition-colors">Dashboard</a>
                     <a href="login.html" class="btn-secondary">Login</a>
                     <a href="signup.html" class="btn-primary">Sign Up</a>
                     <button id="theme-toggle" class="p-2 rounded-lg hover:bg-surface transition-colors">
@@ -83,7 +87,7 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden pb-4 pt-2">
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 pt-2 space-y-3">
                 <a href="index.html" class="block py-2 text-primary hover:text-accent-terracotta">Home v1</a>
                 <a href="home-2.html" class="block py-2 text-primary hover:text-accent-terracotta">Home v2</a>
                 <a href="about.html" class="block py-2 text-primary hover:text-accent-terracotta">About</a>
@@ -91,40 +95,78 @@
                 <a href="gallery.html" class="block py-2 text-primary hover:text-accent-terracotta">Gallery</a>
                 <a href="blog.html" class="block py-2 text-primary hover:text-accent-terracotta">Blog</a>
                 <a href="contact.html" class="block py-2 text-primary hover:text-accent-terracotta">Contact</a>
-                <a href="login.html" class="block py-2 text-primary hover:text-accent-terracotta">Login</a>
-                <a href="signup.html" class="block py-2 text-primary hover:text-accent-terracotta">Sign Up</a>
+                <a href="dashboard.html" class="block py-2 text-primary hover:text-accent-terracotta">Dashboard</a>
+                <div class="flex gap-4 pt-2 pb-2">
+                    <a href="login.html" class="btn-secondary flex-1 text-center py-2.5">Login</a>
+                    <a href="signup.html" class="btn-primary flex-1 text-center py-2.5">Sign Up</a>
+                </div>
+                <div class="pt-2">
+                    <button id="theme-toggle-mobile" class="w-auto p-2 rounded-lg hover:bg-surface transition-colors border border-theme flex items-center justify-center">
+                        <span id="theme-icon-mobile">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section - Full Width Image Background -->
-    <section class="pt-32 pb-24 px-4 sm:px-6 lg:px-8 relative">
-        <div class="absolute inset-0 z-0">
+    <!-- Hero Section - Redesigned -->
+    <section class="pt-32 pb-32 px-4 sm:px-6 lg:px-8 relative min-h-[85vh] flex items-center">
+        <div class="absolute inset-0 z-0 overflow-hidden">
             <img src="https://loremflickr.com/1920/1080/pottery,studio?lock=39" alt="Pottery studio"
-                class="w-full h-full object-cover opacity-20">
+                class="w-full h-full object-cover opacity-15">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-primary"></div>
         </div>
         <div class="container mx-auto max-w-6xl relative z-10">
-            <div class="max-w-3xl mx-auto text-center section-reveal">
-                <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-light leading-tight mb-6 text-primary">
-                    Craft Your <span class="text-accent-terracotta">Story</span> in Clay
+            <div class="max-w-4xl mx-auto text-center section-reveal">
+                <div class="mb-8 inline-block">
+                    <div class="w-20 h-1 bg-accent-terracotta mx-auto mb-6"></div>
+                </div>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-light leading-tight mb-8 text-primary">
+                    Craft Your <span class="text-accent-terracotta font-normal">Story</span> in Clay
                 </h1>
-                <p class="text-xl text-secondary leading-relaxed mb-10" style="line-height: 1.65;">
+                <p class="text-xl md:text-2xl text-secondary leading-relaxed mb-12 max-w-2xl mx-auto" style="line-height: 1.65;">
                     Experience the meditative art of pottery making in our welcoming studio. From beginner to advanced,
                     find your perfect workshop.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="workshops.html" class="btn-primary">Browse Workshops</a>
-                    <a href="gallery.html" class="btn-secondary">View Gallery</a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                    <a href="workshops.html" class="btn-primary text-lg px-8 py-4">Browse Workshops</a>
+                    <a href="gallery.html" class="btn-secondary text-lg px-8 py-4">View Gallery</a>
+                </div>
+                <div class="flex items-center justify-center gap-8 text-sm text-secondary">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-accent-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Expert Instructors</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-accent-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>All Skill Levels</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-accent-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Materials Included</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Grid -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-surface">
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-surface mt-16 relative z-10">
         <div class="container mx-auto max-w-6xl">
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center section-reveal stagger-item">
+                <div class="card p-8 text-center section-reveal stagger-item">
                     <div
                         class="w-16 h-16 rounded-full bg-accent-terracotta bg-opacity-10 flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-accent-terracotta" fill="none" stroke="currentColor"
@@ -140,7 +182,7 @@
                     </p>
                 </div>
 
-                <div class="text-center section-reveal stagger-item">
+                <div class="card p-8 text-center section-reveal stagger-item">
                     <div
                         class="w-16 h-16 rounded-full bg-accent-sage bg-opacity-10 flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-accent-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,7 +197,7 @@
                     </p>
                 </div>
 
-                <div class="text-center section-reveal stagger-item">
+                <div class="card p-8 text-center section-reveal stagger-item">
                     <div
                         class="w-16 h-16 rounded-full bg-accent-terracotta bg-opacity-10 flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-accent-terracotta" fill="none" stroke="currentColor"
@@ -318,7 +360,12 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 <!-- Column 1: Studio Description -->
                 <div>
-                    <h3 class="text-xl font-heading font-medium mb-4 text-primary">Earth & Clay Studio</h3>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-6 h-6 text-accent-terracotta" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
+                        </svg>
+                        <h3 class="text-xl font-heading font-medium text-primary">Earth & Clay Studio</h3>
+                    </div>
                     <p class="text-secondary mb-4" style="line-height: 1.65;">
                         A sanctuary for creativity where the ancient art of pottery meets modern inspiration.
                     </p>
