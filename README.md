@@ -7,7 +7,7 @@ A professional, frontend-only HTML template for pottery workshop studios. Built 
 - **Two Homepage Variants** - Different layouts for variety
 - **Fully Responsive** - Mobile-first design that works on all devices
 - **Light/Dark Mode** - Seamless theme switching with CSS variables
-- **12 Complete Pages** - All essential pages included
+- **11 Complete Pages** - All essential pages included
 - **Clean & Modern Design** - Calm, earthy aesthetic with tactile feel
 - **Accessibility Focused** - WCAG AA compliant, respects prefers-reduced-motion
 - **ThemeForest Ready** - Professional quality suitable for marketplace
@@ -34,7 +34,6 @@ pottery-workshop-studio/
 ├── workshops.html                # Workshop listings
 ├── workshop-details.html         # Individual workshop page
 ├── gallery.html                  # Student creations gallery
-├── shop.html                     # Pottery shop (UI only)
 ├── blog.html                     # Blog listing
 ├── blog-details.html             # Individual blog post
 ├── contact.html                  # Contact form and info
@@ -125,7 +124,6 @@ pottery-workshop-studio/
 - **workshops.html** - Grid of all available workshops
 - **workshop-details.html** - Detailed workshop information with booking
 - **gallery.html** - Image gallery of student creations
-- **shop.html** - Product listings (UI only, no backend)
 - **blog.html** - Blog post listings
 - **blog-details.html** - Individual blog post with related articles
 - **contact.html** - Contact form and studio information
@@ -193,7 +191,6 @@ All content is in HTML files. Simply edit the text directly in each file.
 
 - **Images:** Currently using Unsplash placeholder URLs. Replace with your own pottery images.
 - **Forms:** All forms are UI-only. No backend functionality included.
-- **Shop:** Product pages are for display only. No e-commerce functionality.
 - **Theme Toggle:** Fully functional, saves user preference.
 
 ## 🔧 Development

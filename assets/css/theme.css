@@ -110,10 +110,10 @@ body {
   background-color: var(--bg-surface);
   color: var(--text-primary);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
   width: 100%;
-  transition: border-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .input-field:focus {
@@ -124,7 +124,7 @@ body {
 /* Card Styles */
 .card {
   background-color: var(--bg-surface);
-  border-radius: 16px;
+  border-radius: 28px;
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
