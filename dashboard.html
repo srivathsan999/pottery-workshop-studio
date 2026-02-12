@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Earth & Clay Studio</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
     <meta name="description"
         content="Manage your pottery workshop registrations and access your member portal at Earth & Clay Studio.">
 
@@ -29,17 +30,97 @@
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center space-x-2">
                     <svg class="w-6 h-6 text-accent-terracotta" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z" />
                     </svg>
-                    <span class="text-2xl font-heading font-semibold text-primary">Earth & Clay</span>
+                    <span class="text-2xl font-heading font-semibold text-primary">Earth & Clay Studio</span>
                 </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative" data-dropdown>
+                        <button data-dropdown-toggle
+                            class="flex items-center space-x-1 text-primary hover:text-accent-terracotta transition-colors">
+                            <span>Home</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div data-dropdown-menu
+                            class="hidden absolute top-full left-0 mt-2 w-40 bg-surface border border-theme rounded-lg shadow-theme-md py-2">
+                            <a href="index.html"
+                                class="block px-4 py-2 text-primary hover:bg-accent-terracotta hover:text-white transition-colors">Home
+                                v1</a>
+                            <a href="home-2.html"
+                                class="block px-4 py-2 text-primary hover:bg-accent-terracotta hover:text-white transition-colors">Home
+                                v2</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-primary hover:text-accent-terracotta transition-colors">About</a>
+                    <a href="workshops.html"
+                        class="text-primary hover:text-accent-terracotta transition-colors">Workshops</a>
+                    <a href="gallery.html"
+                        class="text-primary hover:text-accent-terracotta transition-colors">Gallery</a>
+                    <a href="blog.html" class="text-primary hover:text-accent-terracotta transition-colors">Blog</a>
+                    <a href="contact.html"
+                        class="text-primary hover:text-accent-terracotta transition-colors">Contact</a>
+                    <a href="dashboard.html" class="text-accent-terracotta font-medium">Dashboard</a>
+                    <a href="login.html" class="btn-secondary">Login</a>
+                    <a href="signup.html" class="btn-primary">Sign Up</a>
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-surface transition-colors">
+                        <span id="theme-icon">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg hover:bg-surface transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 pt-2 space-y-3">
+                <a href="index.html" class="block py-2 text-primary hover:text-accent-terracotta">Home v1</a>
+                <a href="home-2.html" class="block py-2 text-primary hover:text-accent-terracotta">Home v2</a>
+                <a href="about.html" class="block py-2 text-primary hover:text-accent-terracotta">About</a>
+                <a href="workshops.html" class="block py-2 text-primary hover:text-accent-terracotta">Workshops</a>
+                <a href="gallery.html" class="block py-2 text-primary hover:text-accent-terracotta">Gallery</a>
+                <a href="blog.html" class="block py-2 text-primary hover:text-accent-terracotta">Blog</a>
+                <a href="contact.html" class="block py-2 text-primary hover:text-accent-terracotta">Contact</a>
+                <a href="dashboard.html" class="block py-2 text-accent-terracotta font-medium">Dashboard</a>
+                <div class="flex gap-4 pt-2 pb-2">
+                    <a href="login.html" class="btn-secondary flex-1 text-center py-2.5">Login</a>
+                    <a href="signup.html" class="btn-primary flex-1 text-center py-2.5">Sign Up</a>
+                </div>
+                <div class="pt-2">
+                    <button id="theme-toggle-mobile"
+                        class="w-auto p-2 rounded-lg hover:bg-surface transition-colors border border-theme flex items-center justify-center">
+                        <span id="theme-icon-mobile">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
     <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto max-w-6xl text-center section-reveal">
+        <div class="container mx-auto max-w-4xl flex flex-col items-center text-center section-reveal">
             <h1 class="text-5xl md:text-6xl font-heading font-light mb-6 text-primary">Dashboard</h1>
             <p class="text-xl text-secondary max-w-2xl mx-auto" style="line-height: 1.65;">
                 Manage your class registrations and access your member portal
@@ -57,7 +138,8 @@
                         <div class="w-12 h-12 rounded-full bg-accent-terracotta flex items-center justify-center mr-4">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                                </path>
                             </svg>
                         </div>
                         <h2 class="text-3xl font-heading font-light text-primary">Class Registration</h2>
@@ -97,13 +179,15 @@
                         </div>
 
                         <div>
-                            <label for="participants" class="block text-primary font-medium mb-2">Number of Participants</label>
+                            <label for="participants" class="block text-primary font-medium mb-2">Number of
+                                Participants</label>
                             <input type="number" id="participants" name="participants" min="1" max="8" value="1"
                                 class="w-full px-4 py-3 bg-surface border border-theme rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-accent-terracotta transition-colors">
                         </div>
 
                         <div>
-                            <label for="notes" class="block text-primary font-medium mb-2">Special Requests or Notes</label>
+                            <label for="notes" class="block text-primary font-medium mb-2">Special Requests or
+                                Notes</label>
                             <textarea id="notes" name="notes" rows="4"
                                 class="w-full px-4 py-3 bg-surface border border-theme rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-accent-terracotta transition-colors"
                                 placeholder="Any special accommodations or requests..."></textarea>
@@ -122,7 +206,9 @@
                                     <span class="text-sm text-accent-terracotta font-medium">Confirmed</span>
                                 </div>
                                 <p class="text-sm text-secondary">March 15, 2024 • 9:00 AM - 1:00 PM</p>
-                                <button type="button" class="view-details-btn mt-2 text-sm text-accent-terracotta hover:underline" data-class="Beginner's Wheel">View Details</button>
+                                <button type="button"
+                                    class="view-details-btn mt-2 text-sm text-accent-terracotta hover:underline"
+                                    data-class="Beginner's Wheel">View Details</button>
                             </div>
                             <div class="p-4 bg-surface rounded-lg border border-theme">
                                 <div class="flex items-center justify-between mb-2">
@@ -130,7 +216,9 @@
                                     <span class="text-sm text-accent-sage font-medium">Pending</span>
                                 </div>
                                 <p class="text-sm text-secondary">March 22, 2024 • 1:00 PM - 5:00 PM</p>
-                                <button type="button" class="view-details-btn mt-2 text-sm text-accent-terracotta hover:underline" data-class="Glazing & Finishing">View Details</button>
+                                <button type="button"
+                                    class="view-details-btn mt-2 text-sm text-accent-terracotta hover:underline"
+                                    data-class="Glazing & Finishing">View Details</button>
                             </div>
                         </div>
                     </div>
@@ -151,7 +239,8 @@
                     <!-- Member Profile -->
                     <div class="mb-8 pb-8 border-b border-theme">
                         <div class="flex items-center mb-6">
-                            <div class="w-16 h-16 rounded-full bg-accent-terracotta flex items-center justify-center text-white text-2xl font-medium mr-4">
+                            <div
+                                class="w-16 h-16 rounded-full bg-accent-terracotta flex items-center justify-center text-white text-2xl font-medium mr-4">
                                 JD
                             </div>
                             <div>
@@ -183,7 +272,8 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                                     </svg>
-                                    <span class="text-primary group-hover:text-accent-terracotta transition-colors">Browse
+                                    <span
+                                        class="text-primary group-hover:text-accent-terracotta transition-colors">Browse
                                         Workshops</span>
                                 </div>
                                 <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor"
@@ -219,7 +309,8 @@
                                             d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
                                         </path>
                                     </svg>
-                                    <span class="text-primary group-hover:text-accent-terracotta transition-colors">Contact
+                                    <span
+                                        class="text-primary group-hover:text-accent-terracotta transition-colors">Contact
                                         Support</span>
                                 </div>
                                 <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor"
@@ -257,7 +348,8 @@
                             </button>
                             <button type="button" id="notification-preferences-btn"
                                 class="w-full flex items-center justify-between p-4 bg-surface rounded-lg border border-theme hover:border-accent-terracotta transition-colors group">
-                                <span class="text-primary group-hover:text-accent-terracotta transition-colors">Notification
+                                <span
+                                    class="text-primary group-hover:text-accent-terracotta transition-colors">Notification
                                     Preferences</span>
                                 <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
@@ -274,8 +366,8 @@
 
     <!-- Scripts -->
     <script src="./assets/js/theme-toggle.js"></script>
+    <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/dashboard.js"></script>
 </body>
 
 </html>
-

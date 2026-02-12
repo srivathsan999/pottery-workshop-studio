@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Earth & Clay Studio - Handcrafted Pottery Workshops</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
     <meta name="description"
         content="Join us at Earth & Clay Studio for handcrafted pottery workshops, artist-led classes, and authentic ceramic experiences.">
 
@@ -29,9 +30,10 @@
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center space-x-2">
                     <svg class="w-6 h-6 text-accent-terracotta" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z" />
                     </svg>
-                    <span class="text-2xl font-heading font-semibold text-primary">Earth & Clay</span>
+                    <span class="text-2xl font-heading font-semibold text-primary">Earth & Clay Studio</span>
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -63,7 +65,8 @@
                     <a href="blog.html" class="text-primary hover:text-accent-terracotta transition-colors">Blog</a>
                     <a href="contact.html"
                         class="text-primary hover:text-accent-terracotta transition-colors">Contact</a>
-                    <a href="dashboard.html" class="text-primary hover:text-accent-terracotta transition-colors">Dashboard</a>
+                    <a href="dashboard.html"
+                        class="text-primary hover:text-accent-terracotta transition-colors">Dashboard</a>
                     <a href="login.html" class="btn-secondary">Login</a>
                     <a href="signup.html" class="btn-primary">Sign Up</a>
                     <button id="theme-toggle" class="p-2 rounded-lg hover:bg-surface transition-colors">
@@ -101,7 +104,8 @@
                     <a href="signup.html" class="btn-primary flex-1 text-center py-2.5">Sign Up</a>
                 </div>
                 <div class="pt-2">
-                    <button id="theme-toggle-mobile" class="w-auto p-2 rounded-lg hover:bg-surface transition-colors border border-theme flex items-center justify-center">
+                    <button id="theme-toggle-mobile"
+                        class="w-auto p-2 rounded-lg hover:bg-surface transition-colors border border-theme flex items-center justify-center">
                         <span id="theme-icon-mobile">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -115,48 +119,32 @@
         </div>
     </nav>
 
-    <!-- Hero Section - Redesigned -->
-    <section class="pt-32 pb-32 px-4 sm:px-6 lg:px-8 relative min-h-[85vh] flex items-center">
-        <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="https://loremflickr.com/1920/1080/pottery,studio?lock=39" alt="Pottery studio"
-                class="w-full h-full object-cover opacity-15">
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-primary"></div>
-        </div>
-        <div class="container mx-auto max-w-6xl relative z-10">
-            <div class="max-w-4xl mx-auto text-center section-reveal">
-                <div class="mb-8 inline-block">
-                    <div class="w-20 h-1 bg-accent-terracotta mx-auto mb-6"></div>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="section-reveal">
+                    <div class="mb-6 inline-block">
+                        <div class="w-16 h-1 bg-accent-terracotta"></div>
+                    </div>
+                    <h1
+                        class="text-5xl md:text-6xl lg:text-7xl font-heading font-light leading-tight mb-6 text-primary">
+                        Craft Your <span class="text-accent-terracotta font-normal">Story</span> in Clay
+                    </h1>
+                    <p class="text-lg text-secondary leading-relaxed mb-8" style="line-height: 1.65;">
+                        Experience the meditative art of pottery making in our welcoming studio. From beginner to
+                        advanced,
+                        find your perfect workshop and join our community of makers.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <a href="workshops.html" class="btn-primary text-center">Browse Workshops</a>
+                        <a href="gallery.html" class="btn-secondary text-center">View Gallery</a>
+                    </div>
+
                 </div>
-                <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-light leading-tight mb-8 text-primary">
-                    Craft Your <span class="text-accent-terracotta font-normal">Story</span> in Clay
-                </h1>
-                <p class="text-xl md:text-2xl text-secondary leading-relaxed mb-12 max-w-2xl mx-auto" style="line-height: 1.65;">
-                    Experience the meditative art of pottery making in our welcoming studio. From beginner to advanced,
-                    find your perfect workshop.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-                    <a href="workshops.html" class="btn-primary text-lg px-8 py-4">Browse Workshops</a>
-                    <a href="gallery.html" class="btn-secondary text-lg px-8 py-4">View Gallery</a>
-                </div>
-                <div class="flex items-center justify-center gap-8 text-sm text-secondary">
-                    <div class="flex items-center gap-2">
-                        <svg class="w-5 h-5 text-accent-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Expert Instructors</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <svg class="w-5 h-5 text-accent-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>All Skill Levels</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <svg class="w-5 h-5 text-accent-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Materials Included</span>
-                    </div>
+                <div class="section-reveal image-zoom">
+                    <img src="https://loremflickr.com/800/1000/pottery,studio?lock=39" alt="Pottery artistry"
+                        class="w-full h-auto rounded-2xl shadow-theme-lg">
                 </div>
             </div>
         </div>
@@ -166,9 +154,9 @@
     <section class="py-20 px-4 sm:px-6 lg:px-8 bg-surface mt-16 relative z-10">
         <div class="container mx-auto max-w-6xl">
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="card p-8 text-center section-reveal stagger-item">
+                <div class="card p-8 text-center section-reveal stagger-item flex flex-col items-center">
                     <div
-                        class="w-16 h-16 rounded-full bg-accent-terracotta bg-opacity-10 flex items-center justify-center mx-auto mb-6">
+                        class="w-16 h-16 rounded-full bg-accent-terracotta bg-opacity-10 flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-accent-terracotta" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -182,9 +170,9 @@
                     </p>
                 </div>
 
-                <div class="card p-8 text-center section-reveal stagger-item">
+                <div class="card p-8 text-center section-reveal stagger-item flex flex-col items-center">
                     <div
-                        class="w-16 h-16 rounded-full bg-accent-sage bg-opacity-10 flex items-center justify-center mx-auto mb-6">
+                        class="w-16 h-16 rounded-full bg-accent-sage bg-opacity-10 flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-accent-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
@@ -197,9 +185,9 @@
                     </p>
                 </div>
 
-                <div class="card p-8 text-center section-reveal stagger-item">
+                <div class="card p-8 text-center section-reveal stagger-item flex flex-col items-center">
                     <div
-                        class="w-16 h-16 rounded-full bg-accent-terracotta bg-opacity-10 flex items-center justify-center mx-auto mb-6">
+                        class="w-16 h-16 rounded-full bg-accent-terracotta bg-opacity-10 flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-accent-terracotta" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -218,7 +206,7 @@
     <!-- Workshop Showcase -->
     <section class="py-20 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-16 section-reveal">
+            <div class="text-center mb-16 section-reveal flex flex-col items-center">
                 <h2 class="text-4xl md:text-5xl font-heading font-light mb-4 text-primary">Our Workshops</h2>
                 <p class="text-lg text-secondary max-w-2xl mx-auto" style="line-height: 1.65;">
                     Explore our range of pottery workshops designed for every skill level
@@ -315,7 +303,7 @@
     <!-- Gallery Preview -->
     <section class="py-20 px-4 sm:px-6 lg:px-8 bg-surface">
         <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-16 section-reveal">
+            <div class="text-center mb-16 section-reveal flex flex-col items-center">
                 <h2 class="text-4xl md:text-5xl font-heading font-light mb-4 text-primary">Student Creations</h2>
                 <p class="text-lg text-secondary max-w-2xl mx-auto mb-8" style="line-height: 1.65;">
                     See the beautiful pieces created by our students
@@ -342,7 +330,7 @@
 
     <!-- CTA Section -->
     <section class="py-20 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto max-w-4xl text-center section-reveal">
+        <div class="container mx-auto max-w-4xl text-center section-reveal flex flex-col items-center">
             <h2 class="text-4xl md:text-5xl font-heading font-light mb-6 text-primary">Start Your Pottery Journey</h2>
             <p class="text-lg text-secondary mb-8 max-w-2xl mx-auto" style="line-height: 1.65;">
                 Join our community of makers and discover the meditative art of pottery. Book your first workshop today.
@@ -362,15 +350,16 @@
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
                         <svg class="w-6 h-6 text-accent-terracotta" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z" />
                         </svg>
-                        <h3 class="text-xl font-heading font-medium text-primary">Earth & Clay Studio</h3>
+                        <h3 class="text-2xl font-heading font-semibold text-primary">Earth & Clay Studio</h3>
                     </div>
                     <p class="text-secondary mb-4" style="line-height: 1.65;">
                         A sanctuary for creativity where the ancient art of pottery meets modern inspiration.
                     </p>
                     <p class="text-sm text-secondary">
-                        © 2024 Earth & Clay Studio. All rights reserved.
+                        © 2026 Earth & Clay Studio. All rights reserved.
                     </p>
                 </div>
 
